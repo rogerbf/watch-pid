@@ -1,8 +1,8 @@
-const watch = (process, pid, callback, delay = 1500) => {
+const watch = (kill, setTimeout, pid, callback, delay = 1500) => {
   setTimeout(() => {
     try {
-      process.kill(pid, 0)
-      watch(process, pid, callback, delay)
+      kill(pid, 0)
+      watch(kill, setTimeout, pid, callback, delay)
     } catch (error) {
       callback(pid)
     }
