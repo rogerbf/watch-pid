@@ -1,7 +1,7 @@
 {
   "name": "watch-pid",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "continuously test if a process exists",
   "main": "index.js",
   "scripts": {
     "test": "jest --config .jest",
@@ -13,7 +13,13 @@
     "coverage": "jest --config .jest --coverage",
     "watch:coverage": "jest --config .jest --coverage --watch"
   },
-  "keywords": [],
+  "keywords": [
+    "pid",
+    "process",
+    "exists",
+    "watch",
+    "watcher"
+  ],
   "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
   "license": "MIT",
   "devDependencies": {
